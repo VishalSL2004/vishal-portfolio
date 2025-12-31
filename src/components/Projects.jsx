@@ -9,15 +9,30 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="section">
-      <h2 className="section-title">
-        My <span className="accent">Projects</span>
-      </h2>
-
       <div className="container">
-        <div className="row g-4">
-          {projects.map((p, i) => (
-            <div key={i} className="col-lg-4 col-md-6">
-              <Motion.div
+
+        {/* TITLE */}
+        <div className="row">
+          <div className="col-12">
+            <h2 className="section-title">
+              My <span className="accent">Projects</span>
+            </h2>
+          </div>
+        </div>
+
+
+        {/* GRID */}
+        <div className="row g-4 justify-content-center mb-4">
+          {projects.map((p, index) => (
+            <div
+              key={index}
+              className="
+                col-12        /* mobile */
+                col-md-6      /* tablet */
+                col-lg-4      /* laptop */
+              "
+            >
+             <Motion.div
                 className="glass-card"
                 whileHover={{ scale: 1.05 }}
                 initial={{ opacity: 0, y: 30 }}
@@ -33,6 +48,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

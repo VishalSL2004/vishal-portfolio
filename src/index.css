@@ -1,0 +1,110 @@
+:root {
+  --bg-main: #020617;
+  --bg-secondary: #0f172a;
+  --accent: #38bdf8;
+  --card-bg: rgba(255, 255, 255, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #020617, #0f172a);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 80px 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-title{
+  margin-bottom: 30px !important;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 100px 40px;
+  }
+}
+
+/* ================= HEADINGS ================= */
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+/* ================= CARDS ================= */
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.4s ease;
+}
+
+.glass-card h4 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(56, 189, 248, 0.35);
+  border-color: var(--accent);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: rgba(2, 6, 23, 0.9) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar a, a {
+  color: #ffffff !important;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.navbar a:hover {
+  color: var(--accent) !important;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #020617;
+  padding: 30px 16px;
+  text-align: center;
+  color: #ffffff;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

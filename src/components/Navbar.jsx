@@ -5,7 +5,7 @@ export default function NavBar({ onExperienceClick }) {
     <Navbar expand="lg" fixed="top" className="navbar navbar-dark">
       <Container>
         <Navbar.Brand href="#home" className="fw-bold text-white">
-          Vishal
+          Vishal.dev
         </Navbar.Brand>
 
         <Navbar.Toggle />

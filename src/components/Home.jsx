@@ -29,7 +29,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
         >
-          <a  href="/vishal-portfolio/vishalDevIT.pdf" download className="btn btn-outline-info px-4">
+          <a  href={`${import.meta.env.BASE_URL}/Vishal_SL_Resume_2026.pdf`} download className="btn btn-outline-info px-4">
             Download Resume
           </a>
 

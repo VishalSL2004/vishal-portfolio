@@ -4,8 +4,11 @@ const skills = [
   "HTML",
   "CSS",
   "JavaScript",
+  "Typescript",
   "React",
+  "Angular",
   "Java",
+  "Springboot",
   "SQL",
   "Git",
 ];
